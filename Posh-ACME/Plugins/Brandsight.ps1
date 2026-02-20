@@ -45,7 +45,7 @@ function Add-DnsTxt {
     } catch { throw }
 
     if (-not $recs -or $TxtValue -notin $recs.data) {
-        # For some odd reason, the Brandsight API doesn't have a method to add a single
+        # the Brandsight API doesn't have a method to add a single
         # record. The closest we can get is re-setting the set of records that match
         # a particular Type and Name. So we need to add our new record to the current
         # set of results and send that.
@@ -104,9 +104,6 @@ function Add-DnsTxt {
 
     .PARAMETER BSSecret
         The Brandsight API Secret.
-
-    .PARAMETER BSSecret
-        (DEPRECATED) The Brandsight API Secret.
 
     .PARAMETER BSUseOTE
         If specified, use the Brandsight OTE test environment rather than the production environment.
@@ -226,9 +223,6 @@ function Remove-DnsTxt {
 
     .PARAMETER BSSecret
         The Brandsight API Secret.
-
-    .PARAMETER BSSecret
-        (DEPRECATED) The Brandsight API Secret.
 
     .PARAMETER BSUseOTE
         If specified, use the Brandsight OTE test environment rather than the production environment.
