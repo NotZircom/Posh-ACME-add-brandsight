@@ -11,7 +11,7 @@ As of writing this, Brandsight API keys must be requested from their support tea
 
 ## Using the Plugin
 
-The Key is used with the `BSKey` string parameter, the Secret is used with the `BSSecret` SecureString parameter, the Customer ID is used with the `BSSecret` parameter.
+The Key is used with the `BSKey` string parameter, the Secret is used with the `BSSecret` SecureString parameter, the Customer ID is used with the `BSCustomerID` parameter.
 
 ```powershell
 $pArgs = @{
